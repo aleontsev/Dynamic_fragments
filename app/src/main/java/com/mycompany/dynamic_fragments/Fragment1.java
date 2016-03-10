@@ -1,9 +1,5 @@
 package com.mycompany.dynamic_fragments;
 
-/**
- * Created by Lenovo on 04.02.2016.
- */
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,12 +10,6 @@ import android.util.Log;
 public class Fragment1 extends Fragment {
 
     final String LOG_TAG = "myLogs";
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        Log.d(LOG_TAG, "Fragment1 onAttach");
-    }
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
