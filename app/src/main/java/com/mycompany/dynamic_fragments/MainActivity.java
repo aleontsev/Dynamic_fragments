@@ -58,13 +58,13 @@ public class MainActivity extends Activity {
         fManager =getFragmentManager();
         switch (v.getId()) {
             case R.id.btnAdd:
-                if (isEmpty(fManager)){
+                if (!IsNotEmpty(fManager)){
                    fTrans.add(R.id.frgmCont1, frag1, "first");
                    fTrans.add(R.id.frgmCont2, frag2, "second");
             }
                 break;
             case R.id.btnRemove:
-                if (!isEmpty(fManager)){
+                if (IsNotEmpty(fManager)){
                    fTrans.remove(frag1);
                    fTrans.remove(frag2);
                 }
@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
         fTrans.commit();
         fManager.executePendingTransactions();
     }
-    boolean isEmpty(FragmentManager fManager){
+    boolean IsNotEmpty(FragmentManager fManager){
         first  = fManager.findFragmentByTag("first");
         second = fManager.findFragmentByTag("second");
         return (first!=null && second!=null);
