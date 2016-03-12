@@ -1,5 +1,7 @@
 # Descriptive lifecycle of dynamic fragments.
 
+Callback Sequence:
+
 D/myLogs: MainActivity onCreate
 
 D/myLogs: MainActivity onStart
