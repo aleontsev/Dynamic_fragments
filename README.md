@@ -1,5 +1,4 @@
-Descriptive lifecycle of dynamic fragments.
-
+# Descriptive lifecycle of dynamic fragments.
 
 D/myLogs: MainActivity onCreate
 
